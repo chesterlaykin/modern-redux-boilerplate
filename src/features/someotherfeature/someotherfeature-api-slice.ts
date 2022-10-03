@@ -2,7 +2,7 @@ import { createApi, fetchBaseQuery } from '@reduxjs/toolkit/query/react';
 
 const SOMEFEATURE_API_KEY = 'xxxxxxxxxxxxxxxxx';
 
-interface SomeFeatureCategory {
+interface SomeOtherFeatureCategory {
   id: string;
   name: string;
   image: {
@@ -22,13 +22,13 @@ export const apiSlice = createApi({
   }),
   endpoints(builder) {
     return {
-      fetchSomeFeatureCategory: builder.query<SomeFeatureCategory[], number | void>({
+      fetchSomeOtherFeatureCategory: builder.query<SomeOtherFeatureCategory[], number | void>({
         query(limit = 10) {
-          return `/somefeaturecategory?limit=${limit}`;
+          return `/some-other-feature-category?limit=${limit}`;
         },
       }),
     };
   },
 });
 
-export const { useFetchSomeFeatureCategoryQuery } = apiSlice;
+export const { useFetchSomeOtherFeatureCategoryQuery } = apiSlice;
