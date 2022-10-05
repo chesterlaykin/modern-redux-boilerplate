@@ -8,6 +8,7 @@ Modern redux boilerplate
 - @reduxjs/toolkit"
 - react-redux
 - react-dom
+- express
 
 # Modern redux boilerplate
 
