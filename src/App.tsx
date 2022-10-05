@@ -4,7 +4,7 @@ import { incremented, amountAdded } from './features/somefeature/somefeature-sli
 import { useFetchSomeOtherFeatureCategoryQuery } from './features/someotherfeature/someotherfeature-api-slice'
 
 function App() {
-  const count = useAppSelector((state) => state.counter.value);
+  const count = useAppSelector((state) => state.somefeature.value);
   const dispatch = useAppDispatch();
 
   const [numItems, setNumItems] = useState(10);
@@ -28,7 +28,7 @@ function App() {
         </p>
         
         <div>
-          <p>Dogs to fetch:</p>
+          <p>Items to fetch:</p>
           <select value={numItems} onChange={(e) => setNumItems(Number(e.target.value))}>
             <option value="5">5</option>
             <option value="10">10</option>
