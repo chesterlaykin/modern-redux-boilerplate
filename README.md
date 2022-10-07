@@ -5,7 +5,7 @@ Modern redux boilerplate
 
 # Dependencies
 
-- @reduxjs/toolkit"
+- @reduxjs/toolkit
 - react-redux
 - react-dom
 - express

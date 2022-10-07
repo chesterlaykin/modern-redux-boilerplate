@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { useAppDispatch, useAppSelector } from './app/hooks';
-import { incremented, amountAdded } from './features/somefeature/somefeature-slice';
-import { useFetchSomeOtherFeatureCategoryQuery } from './features/someotherfeature/someotherfeature-api-slice'
+import { useAppDispatch, useAppSelector } from './redux/hooks';
+import { incremented, amountAdded } from './redux/features/somefeature/somefeature-slice';
+import { useFetchSomeOtherFeatureCategoryQuery } from './redux/features/someotherfeature/someotherfeature-api-slice'
 
 function App() {
   const count = useAppSelector((state) => state.somefeature.value);
